@@ -26,13 +26,14 @@ function numeroEnComun(array1, array2) {
             if (array1[i] === array2[j]){
                 return valorComun = array1[i];                
             }  
-            let newArray = array1 + ","+ array2;
+            var newArray = array1 + ","+ array2;            
             menor = newArray.split(",").sort(function ab(a,b){return a-b});
             valorComun = Number(menor[0]);                                    
         }
     }
     return valorComun;      
 };
+console.log (newArray);
 console.log(numeroEnComun([10, 15, 24], [2, 19, 10])); // 10
 console.log(numeroEnComun([3, 6, 10, 11], [2, 4, 5, 2])); // 2
 
